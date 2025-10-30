@@ -9,7 +9,7 @@ export default function LoginGoogle({ onLoginSuccess }) {
       const result = await signInWithPopup(auth, googleProvider);
       const idToken = await result.user.getIdToken();
 
-      const res = await fetch("http://localhost:4000/api/usuarios/login/google", {
+      const res = await fetch("https://pryanafinalback.onrender.com/api/usuarios/login/google", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ idToken }),
