@@ -1,5 +1,5 @@
 // Define la URL base de tu API (Backend en puerto 4000 + prefijo de rutas)
-const BASE_URL = "http://localhost:4000/api/usuarios";
+const BASE_URL = "https://pryanafinalback.onrender.com/api/usuarios";
 
 export async function registrarUsuario(payload) {
   // La ruta aquí es solo "/register" porque el prefijo ya está en BASE_URL
